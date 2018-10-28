@@ -11,7 +11,6 @@ module.exports = function start(){
     		blink: true,
     		shape: 'underline'
     	},
-    	log: `${__dirname}/application.log`,
     	debug: true,
     	dockBorders: true
       });
