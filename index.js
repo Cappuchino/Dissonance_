@@ -1,4 +1,5 @@
-const blessed = require('blessed');
+const Discord = require('discord.js')
+const client =  new Discord.Client
 //banner
 console.log(' ######                                                                              ')
 console.log(' #     #  #   ####    ####    ####   #    #    ##    #    #   ####   ######          ')
@@ -8,6 +9,7 @@ console.log(' #     #  #       #       #  #    #  #  # #  ######  #  # #  #     
 console.log(' #     #  #  #    #  #    #  #    #  #   ##  #    #  #   ##  #    #  #               ')
 console.log(' ######   #   ####    ####    ####   #    #  #    #  #    #   ####   ######          ')
 console.log('                                                                             ####### ')
+console.log('\n')
 console.log('Dissonance_ -Cappuchino 2018')
 
 try{
@@ -23,21 +25,5 @@ catch(error) {
 
 
 
-function start(){
-
-    // Create a screen object.
-    var screen = blessed.screen({
-        smartCSR: true,
-    	useBCE: true,
-    	cursor: {
-    		artificial: true,
-    		blink: true,
-    		shape: 'underline'
-    	},
-    	log: `${__dirname}/application.log`,
-    	debug: true,
-    	dockBorders: true
-      });
-
-    screen.title = 'Dissonance_';
-}
+const blessed = require('./blessed/index')
+blessed()

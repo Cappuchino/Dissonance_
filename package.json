@@ -1,13 +1,13 @@
 {
   "name": "dissonance_",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1a",
+  "description": "Custom Discord client in NodeJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "c4ppucc1n0",
   "license": "ISC",
   "dependencies": {
     "blessed": "^0.1.81",
